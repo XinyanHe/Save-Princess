@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_intro">
+    <item>Q：how do I pass the first level？</item>
+    <item>A：Push all boxes to locations of the flags, the you will pass.</item>
+    <item>Q：how to push the boxes？</item>
+    <item>A：Try to let the man walks to the pixel next to the box, so that he can control/push
+        the box by walking towards that direction.
+        If there is an obstacle in the direction of movement, then the Prince could not make that move.</item>
+    <item>Q：How to control the movement？</item>
+    <item>A：touch the direction you want the Prince move towards.</item>
+    <item>Q：What are "restart" and "exist" button mean?</item>
+    <item>A：Retart the current level if you press "restart" button. Exist the entire game if you
+        press "exist" button.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deernight"
+    tools:context=".setting.SettingsActivity">
+
+    <TextView
+        android:id="@+id/character_text"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/character"
+        android:textColor="#FF777070"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_text" />
+
+    <TextView
+        android:id="@+id/background_text"
+        android:layout_width="124dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/background"
+        android:textColor="#777070"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/points3"
+        android:layout_width="66dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:text="Music"
+        android:textColor="#FF777070"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character_text" />
+
+    <Button
+        android:id="@+id/btn_back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="83dp"
+        android:background="#CDDC39"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/Setbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="180dp"
+        android:checked="false"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/tertiary_text_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="139dp"
+        android:text="@string/settings"
+        android:textColor="#5E5E5E"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="46dp"
+        android:backgroundTint="#CDDC39"
+        android:text="play"
+        app:layout_constraintStart_toEndOf="@+id/points3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="324dp"
+        android:src="@drawable/character"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="92dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#CDDC39"
+        android:text="pause"
+        app:layout_constraintStart_toEndOf="@+id/btn_play"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="85dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="66dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/prince"
+        app:layout_constraintStart_toEndOf="@+id/character_text"
+        app:layout_constraintTop_toBottomOf="@+id/Setbackground" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
