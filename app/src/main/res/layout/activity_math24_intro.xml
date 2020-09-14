@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/math24introPage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".games.math24game.activity.Math24IntroActivity">
+
+    <Button
+        android:id="@+id/btn_back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#E91E63"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/math24intro"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:background="#0003A9F4"
+        android:text="Introduction of Math24"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/introBody"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:background="#0000D48A"
+        android:text="         1. The purpose: use the 4 numbers to get 24. Each number must and can be only used once. \n
+        2. Three lives for level 1, and one live for level 2. The player will lose a live if the result isn't 24 after clicking the equal sign. \n
+        3. The clear button can clear the letters you entered before you press the equal sign.\n
+         4. After getting a question accurate, click 'next' button to get to next question.\n
+         5. After getting three questions accurate, you will jump to level 2, which needs more complex number combinations.\n
+         6. The game will end when the player has no more lives. For level 2 specifically, if you get three questions accurate consecutively"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/math24intro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

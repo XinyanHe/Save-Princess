@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/catchBall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".games.catchballgame.activity.CatchBallActivity">
+
+    <Chronometer
+        android:id="@+id/chronometerBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="214dp"
+        android:format="USED TIME :  00:00"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rankball"
+        android:layout_width="142dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="80dp"
+        android:text="RANK: BRONZE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="9dp"
+        android:paddingStart="10dp"
+        android:text="Score : 300"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/frame"
+        app:layout_constraintEnd_toStartOf="@+id/catchBallLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chronometerBall" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreLabel">
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:text="Tap To Start"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/catchBallPause"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="450dp"
+            android:background="#CDDC39"
+            android:text="@string/pause"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/catchBallBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="450dp"
+            android:background="#CDDC39"
+            android:text="@string/back"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/prince" />
+
+        <ImageView
+            android:id="@+id/orange"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/pink"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/pink" />
+
+        <ImageView
+            android:id="@+id/black"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/black" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/catchBallLevel"
+        android:layout_width="209dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/rankball"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

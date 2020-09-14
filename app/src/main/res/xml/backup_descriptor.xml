@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude the shared preferences file that contains the GCM registrationId -->
+<!--    <exclude-->
+<!--        domain="sharedpref"-->
+<!--        path="USER.xml" />-->
+<!--    <exclude-->
+<!--        domain="sharedpref"-->
+<!--        path="userDetails.xml" />-->
+<!--    <exclude-->
+<!--        domain="sharedpref"-->
+<!--        path="GAME_DATA2048.xml" />-->
+<!--    <exclude-->
+<!--        domain="sharedpref"-->
+<!--        path="switch.xml" />-->
+<!--    <exclude-->
+<!--        domain="sharedpref"-->
+<!--        path="GAME_DATA.xml" />-->
+</full-backup-content>

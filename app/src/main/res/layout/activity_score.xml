@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background= "@drawable/whitebackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/GameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Game Title"
+        android:textColor="#fd737272"
+        android:textSize="26sp"
+        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+    <TextView
+        android:id="@+id/ScoreDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/GameTitle"
+        android:text="Score description"
+        android:textColor="#fd747474"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+    <TextView
+        android:id="@+id/GlobalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ScoreDescription"
+        android:text="Global Top Scores"
+        android:textColor="#fd747474"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/GlobalScores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GlobalTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:text=""
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:textColor="#fd747474" />
+
+    <TextView
+        android:id="@+id/UserTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GlobalScores"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="User Top Scores"
+        android:textColor="#fd747474"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/UserScores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:textColor="#fd747474" />
+
+    <Button
+        android:id="@+id/ReturnButton"
+        style="@android:style/Widget.DeviceDefault.Button.Small"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/UserScores"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#82C5FF"
+        android:text="Return" />
+
+</RelativeLayout>
